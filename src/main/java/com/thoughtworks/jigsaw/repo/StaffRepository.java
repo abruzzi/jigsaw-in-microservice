@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StaffRepository extends MongoRepository<Staff, String>, PagingAndSortingRepository<Staff, String> {
+    Staff findByLoginName(String loginName);
 }
