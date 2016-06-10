@@ -16,8 +16,9 @@ apply plugin: 'spring-boot'
 
 jar {
 	baseName = 'staff-service'
-	version = '0.0.1-SNAPSHOT'
+	version = '1.0.0'
 }
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -31,7 +32,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.cloud:spring-cloud-starter-eureka')
-	testCompile('org.springframework.boot:spring-boot-starter-test') 
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
