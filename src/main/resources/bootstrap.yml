@@ -1,3 +1,6 @@
 spring:
   application:
-    name: staff-service
+    name: staffservice
+  cloud:
+    config:
+      uri: http://localhost:9990/
